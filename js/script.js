@@ -10467,6 +10467,37 @@ document.addEventListener('scroll', function () {
 });
 
 ;
+var awardsSwiper = new Swiper('.trusts__container', {
+  direction: 'horizontal',
+  loop: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      centeredSlides: true,
+      spaceBetween: 30
+    },
+    500: {
+      slidesPerView: 2,
+      centeredSlides: false,
+      spaceBetween: 50
+    },
+    700: {
+      slidesPerView: 3,
+      centeredSlides: false,
+      spaceBetween: 50
+    },
+    1200: {
+      slidesPerView: 4,
+      centeredSlides: false,
+      spaceBetween: 50
+    }
+  },
+  navigation: {
+    nextEl: '.trusts__arrow_right',
+    prevEl: '.trusts__arrow_left'
+  }
+});
+;
 var casesSwiper = new Swiper('.cases__swiper', {
   direction: 'horizontal',
   loop: true,
